@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.immortal.myproject.MainActivity"
+    android:background="@android:color/holo_green_dark">
+
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fet"
+        android:layout_below="@+id/set"
+        android:layout_alignParentStart="true"
+        android:hint="Second Number" />
+
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/set"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/ftv"
+        android:layout_alignParentStart="true"
+        android:hint="First Number" />
+
+    <Button
+        android:text="Reset"
+        android:onClick="open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="111dp"
+        android:background="@android:color/holo_green_light"
+        android:foreground="@android:color/transparent"
+        android:freezesText="false"
+        android:foregroundTint="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/ftv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="+"
+        android:layout_height="55dp"
+        android:id="@+id/Plus"
+        android:layout_marginBottom="75dp"
+        android:background="@android:color/holo_green_light"
+        android:layout_width="55dp"
+        android:layout_alignBottom="@+id/fb"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="-"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/Minus"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginRight="20dp"
+        android:layout_alignBaseline="@+id/Plus"
+        android:layout_alignBottom="@+id/Plus"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="/"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/Div"
+        android:background="@android:color/holo_green_light"
+        android:layout_alignBaseline="@+id/Plus"
+        android:layout_alignBottom="@+id/Plus"
+        android:layout_toEndOf="@+id/Plus"
+        android:layout_marginStart="30dp" />
+
+    <Button
+        android:text="*"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/Mult"
+        android:background="@android:color/holo_green_light"
+        android:layout_alignBaseline="@+id/Minus"
+        android:layout_alignBottom="@+id/Minus"
+        android:layout_toEndOf="@+id/Div"
+        android:layout_marginStart="42dp" />
+</RelativeLayout>
